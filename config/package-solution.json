@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "test-solution-client-side-solution",
+    "id": "afd0ec4f-3163-4022-9305-328e0a43ab64",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Tasks.Read"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/test-solution.sppkg"
+  }
+}
